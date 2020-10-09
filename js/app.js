@@ -21,7 +21,7 @@ let projects = [
     techUsed: "Python Django , jQuery",
     description:
       "Social Networking Site like Facebook or Twitter built with Python Django and jQuery. Signup and start using it",
-    image: "raven.jpg",
+    image: "raven.JPG",
     live: "http://sbraven.herokuapp.com/",
     repo:
       "https://github.com/basu-dev/django-social-network-like-Facebook-or-Instagram",
@@ -80,10 +80,11 @@ const projectTemplate = (
   live,
   repo
 ) => {
+    console.log(image)
   return /*html*/ `
             <div class="project-card" id="card-${index}">
           <div class="project-img">
-            <img src="${image}" alt="${title}">
+            <img src="./images/${image}" alt="${title}">
           </div>
           <div class="header">
             <h2>${title}</h2>
@@ -173,10 +174,56 @@ projects.forEach((x, index) => {
     x.title,
     x.techUsed,
     x.description,
+    x.image,
     x.live,
     x.repo
   );
   projectArea.append(parse(temp));
 });
-
+const timeline=[
+    {
+        number:6,
+        date: "Aug 2020",
+        event:"Starting Learning Rust Programming Language for WebAssembly"
+    },
+    {
+        number:5,
+        date:"Jan 2020 - Present",
+        event:"Working at DCube IT Solution, Pokhara as Angular Developer"
+    },
+    {
+        number:4,
+        date:"2019",
+        event:"Started as Full Stack Web Developer at B&BMultimedia and at the same time started learning Angular."
+    },
+    {
+        number:3,
+        date:"2018",
+        event:"Made some blog websites with Python Django and learnt jQuery. Made the Raven- A Social Network project in Django and jQuery and made website for B&B Multimedia."
+    },
+    {
+        number:2,
+        date:"2017",
+        event:"Started Learning HTML, JavaScript & CSS and started making basic Web Pages with static contents. At the end of the year I was already learning Python for backend."
+    },
+    {
+        number:1,
+        date:"2016",
+        event:"Started as Electronics & Communication Enginnering at WRC, Pokhara. Learnt C as first programming language. Started to know about programming language like C, C#, Python etc"
+    }
+]
+const timeLineTemp=(number,date,event)=>{
+    return /*html*/`
+      <article class="timeline-item">
+        <h4>${date}</h4>
+        <p>${event}</p>
+        <span class="number"> ${number} </span>
+      </article>
+`
+};
+const timeLineCenter=document.querySelector(".timeline-center");
+timeline.forEach(x=>{
+    timeLineCenter.append(parse(timeLineTemp(x.number,x.date,x.event)));
+    
+})
 // })();
