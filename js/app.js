@@ -1,5 +1,5 @@
 "use strict";
-// (function (){
+(function (){
 const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
@@ -81,7 +81,6 @@ const projectTemplate = (
   live,
   repo
 ) => {
-    console.log(image)
   return /*html*/ `
             <div class="project-card" id="card-${index}">
           <div class="project-img">
@@ -139,7 +138,7 @@ const socialLinksTemplate = (i) => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/AdBasudev" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <a href="https://basudevadhikari.netlify.app" target="_blank" rel="noopener noreferrer" class="social-icon">
             <i class="fab fa-dev"></i>
           </a>
         </li>
@@ -165,7 +164,6 @@ const parse = (string) => {
 };
 const socialIconsBar = document.querySelectorAll(".social-icons");
 document.querySelectorAll(".social-iconss").forEach((x,i) => {
-    console.log(i)
   let parsed = parse(socialLinksTemplate(i));
   x.append(parsed);
 });
@@ -227,4 +225,4 @@ timeline.forEach(x=>{
     timeLineCenter.append(parse(timeLineTemp(x.number,x.date,x.event)));
     
 })
-// })();
+})();

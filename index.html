@@ -32,21 +32,17 @@
   <link rel="stylesheet" href="./css/style.css" />
   <!-- <link rel="shortcut icon" href="./images/GNlogo.png" type="icon"> -->
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="nav" id="id" id="home">
     <div class="nav-center">
       <!-- logo -->
-
       <div class="nav-header">
         <button class="nav-btn" id="nav-btn">
           <i class="fas fa-bars"></i>
         </button>
       </div>
-
       <!-- logo -->
-
       <!-- nav-links -->
       <div>
         <ul class="nav-links">
@@ -77,9 +73,7 @@
       <button class="close-btn" id="close-btn">
         <i class="fas fa-times"></i>
       </button>
-
       <!-- nav-links -->
-
       <ul class="sidebar-links">
         <li>
           <a href="#index" onclick="getElementById('close-btn').click()">home</a>
@@ -97,12 +91,11 @@
           <a href="#contact" onclick="getElementById('close-btn').click()">contact</a>
         </li>
       </ul>
-
       <div class="social-iconss"></div>
   </aside>
   <!-- sidebar -->
   <!-- header -->
-  <header class="hero">
+  <header id="index" class="hero">
     <div class="section-center hero-center">
       <article class="hero-info">
         <div class="underline"></div>
@@ -168,7 +161,6 @@
       <div class="underline"></div>
     </div>
     <!-- end of section title -->
-
       <article class="box">
         <h3>Languages</h3>
         <div class="skill-box-1">
@@ -211,7 +203,6 @@
             <img class="skill-icn" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png" alt="ASP.NET Core">
             <p class="skill-name">ASP.NET Core</p>
           </div>
-
         </div>
       </article>
       <article class="box">
@@ -247,26 +238,15 @@
   </section>
   <!--end of  timeline -->
   <!-- blog -->
-  <section class="section blog" id="blogs">
-    <!-- section title -->
-    <!-- <div class="section-title">
-      <h2>blog</h2>
-      <div class="underline"></div>
-    </div> -->
-    <!--end of section title -->
-    </div>
-  </section>
+  <section class="section blog" id="blogs"></section>
   <!--end of  blog -->
   <!-- footer -->
   <footer class="footer" id="contact">
     <!-- social icons -->
     <div class="social-iconss"></div>
-
     <p>&copy; <span id="date"></span> Basu Dev Adhikari. All rights reserved <span class="nepal">&#x1f1f3;&#x50;</span>
     </p>
   </footer>
-
   <script async src="./js/app.js"></script>
 </body>
-
 </html>
