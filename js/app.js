@@ -59,6 +59,7 @@ let projects = [
       "Tic Tac Toe game developed as my Advanced JavaScript Challenge. You can play single player as well as multi player game.",
     image: "tic.jpg",
     live: "https://tictactoemini.netlify.app",
+    repo:"https://github.com/basu-dev/TicTacToe-PWA-"
   },
   {
     title: "Far - CLI Text Viewer",
