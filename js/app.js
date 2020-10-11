@@ -1,10 +1,10 @@
 "use strict";
-(function (){
-const navbar = document.querySelector("#nav");
-const navBtn = document.querySelector("#nav-btn");
-const closeBtn = document.querySelector("#close-btn");
-const sidebar = document.querySelector("#sidebar");
-const date = document.querySelector("#date");
+(function (d){
+const navbar = d.querySelector("#nav");
+const navBtn = d.querySelector("#nav-btn");
+const closeBtn = d.querySelector("#close-btn");
+const sidebar = d.querySelector("#sidebar");
+const date = d.querySelector("#date");
 
 // show sidebar
 navBtn.addEventListener("click", function () {
@@ -15,7 +15,7 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear();
-let projects = [
+const projects = [
   {
     title: "Raven - Social Network",
     techUsed: "Python Django , jQuery",
@@ -67,11 +67,12 @@ let projects = [
     description:
       "A file opener for Windows command prompt and PowerShell like 'cat' for linux distributions. You can install it and type far <filename> and boom!",
     image: "far.jpg",
+    live:"https://farcli.netlify.app",
     repo:
       "https://github.com/basu-dev/far-A-command-prompt-text-viewer-like-cat-for-linux",
   },
 ];
-const projectArea = document.querySelector(".projects-center .card-list");
+const projectArea = d.querySelector(".projects-center .card-list");
 const projectTemplate = (
   index,
   title,
@@ -162,8 +163,8 @@ const parse = (string) => {
   return parser.parseFromString(string, "text/html").querySelector("body")
     .children[0];
 };
-const socialIconsBar = document.querySelectorAll(".social-icons");
-document.querySelectorAll(".social-iconss").forEach((x,i) => {
+const socialIconsBar = d.querySelectorAll(".social-icons");
+d.querySelectorAll(".social-iconss").forEach((x,i) => {
   let parsed = parse(socialLinksTemplate(i));
   x.append(parsed);
 });
@@ -220,9 +221,9 @@ const timeLineTemp=(number,date,event)=>{
       </article>
 `
 };
-const timeLineCenter=document.querySelector(".timeline-center");
+const timeLineCenter=d.querySelector(".timeline-center");
 timeline.forEach(x=>{
     timeLineCenter.append(parse(timeLineTemp(x.number,x.date,x.event)));
     
 })
-})();
+})(document);

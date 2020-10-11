@@ -1,0 +1,25 @@
+
+#large-nav ul li a{
+    position: relative;
+}
+#large-nav ul li a::before{
+    position: absolute;
+    bottom:-10px;
+    height:.25rem;
+    width:0;
+    left:-7.5%;
+    background-color: red;
+    content: "";
+}
+#large-nav ul li a:hover ::before{
+    width:110%;
+}
+#large-nav{
+    position: fixed;
+    background-color: var(--clr-primary);
+    z-index: 5;
+    width:90vw;
+    margin:0;
+    padding:70px;
+
+}
