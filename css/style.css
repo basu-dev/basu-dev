@@ -334,7 +334,7 @@ Sidebar
     position: fixed;
     top: 0;
     right: -100%;
-    max-width: 80%;
+    max-width: 50%;
     height: 100%;
     background: var(--clr-primary);
     z-index: 10;
