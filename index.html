@@ -34,10 +34,11 @@
 </head>
 <body>
   <!-- navbar -->
-  <nav class="nav" id="id" id="home">
+  <nav class="nav" id="id">
     <div class="nav-center">
       <!-- logo -->
       <div class="nav-header">
+        <h3><a href="#home">BasuDev</a></h3>
         <button class="nav-btn" id="nav-btn">
           <i class="fas fa-bars"></i>
         </button>
@@ -47,7 +48,7 @@
       <div id="large-nav">
         <ul class="nav-links">
           <li>
-            <a href="#">
+            <a href="#home">
               <span class="fas fa-home"></span> home</a>
           </li>
           <li>
@@ -82,7 +83,7 @@
       <!-- nav-links -->
       <ul class="sidebar-links">
         <li>
-          <a href="#" onclick="getElementById('close-btn').click()">
+          <a href="#home" onclick="getElementById('close-btn').click()">
             <span class="fas fa-home"></span> home</a>
         </li>
         <li>
@@ -108,7 +109,7 @@
 
   <!-- sidebar -->
   <!-- header -->
-  <header  class="hero">
+  <header  class="hero" id="home">
     <div class="section-center hero-center">
       <article class="hero-info">
         <div class="underline"></div>
@@ -251,10 +252,64 @@
   </section>
   <!--end of  timeline -->
   <!-- blog -->
+  <section class="section" id="contact">
+    <div class="section-title">
+      <h2>Contact Me</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="box">
+    <form>
+      <h3>Leave A Message</h3><br>
+      <div class="group">      
+        <input type="email" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Email</label>
+      </div>
+      <div class="group">      
+        <input type="text" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Title</label>
+      </div>
+      <div class="group">      
+        <textarea type="text" rows=5 required></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Message</label>
+      </div>
+        
+      <div class="form-group">
+
+        <button type="submit">Send</button>
+      </div>
+    </form>
+    <div class="contact-detail">
+        <h3 >My Contact Details</h3><br>
+        <ul>
+          <li>
+            <span>Email</span>
+            adbasudev54@gmail.com
+          </li><br>
+          <li>
+            <span>Phone</span>
+            +977 986-3374403
+          </li><br/>
+
+          <li>
+            <span>Address</span>
+            Pokhara-16 <br>
+            Pashchimanchal Campus, Lamachaur <br>
+            Gandaki, Nepal
+          </li>
+        </ul>
+    </div>
+    </div>
+  </section>
   <section class="section blog" id="blogs"></section>
   <!--end of  blog -->
   <!-- footer -->
-  <footer class="footer" id="contact">
+  <footer class="footer">
     <!-- social icons -->
     <div class="social-iconss"></div>
     <p>&copy; <span id="date"></span> Basu Dev Adhikari. All rights reserved <span class="nepal">&#x1f1f3;&#x50;</span>

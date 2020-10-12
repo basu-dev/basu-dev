@@ -2,10 +2,12 @@
 // (function (d){
   const d=document;
 const navbar = d.querySelector("#large-nav");
+const navheader =d.querySelector(".nav-header");
+const main=d.querySelector("main");
 const navBtn = d.querySelector("#nav-btn");
 const closeBtn = d.querySelector("#close-btn");
-const sidebar = d.querySelector("#sidebar");
-const date = d.querySelector("#date");
+// const sidebar = d.querySelector("#sidebar");
+const date = d.querySelector("#date");  
 
 // show sidebar
 navBtn.addEventListener("click", function () {
@@ -140,11 +142,6 @@ const socialLinksTemplate = (i) => {
           </a>
         </li>
         <li>
-          <a href="https://basudevadhikari.netlify.app" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <i class="fab fa-dev"></i>
-          </a>
-        </li>
-        <li>
           <a href="https://www.instagram.com/______dev________/" target="_blank" rel="noopener noreferrer"
             class="social-icon">
             <i class="fab fa-instagram"></i>
@@ -229,14 +226,15 @@ timeline.forEach(x=>{
 });
 const scrollTop=_=>d.querySelector("main").scrollTop;
 let initialScrollTop=scrollTop();
-window.onscroll=()=>{
-  console.log(initialScrollTop)
+main.onscroll=()=>{
   let currentScrollTop=scrollTop();
   if(currentScrollTop < initialScrollTop){
     navbar.style.top="0px";
+    navheader.style.top="0px";
   }
   else if(currentScrollTop>100){
-    navbar.style.top="-45px";
+    navbar.style.top="-47px";
+    navheader.style.top="-47px";
   }
   initialScrollTop=currentScrollTop;
 }
