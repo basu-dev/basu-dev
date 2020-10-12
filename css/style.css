@@ -46,6 +46,12 @@ body {
     color: var(--clr-white);
     line-height: 1.5;
     font-size: 0.825rem;
+    overflow: hidden;
+}
+main{
+    z-index: 1;
+    height:100vh;
+    overflow: scroll;
 }
 
 ul {
@@ -1394,8 +1400,9 @@ Sidebar
 .sidebar-links a {
     /* font-size: 1.5rem; */
     text-transform: capitalize;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+    /* -webkit-transition:color var(--transition);
+    transition: var(--transition); */
+    transition: none;
     color: var(--clr-secondary);
     letter-spacing: var(--spacing);
     display: inline-block;

@@ -227,9 +227,11 @@ timeline.forEach(x=>{
     timeLineCenter.append(parse(timeLineTemp(x.number,x.date,x.event)));
     
 });
-let initialScrollTop=window.pageYOffset;
+const scrollTop=_=>d.querySelector("main").scrollTop;
+let initialScrollTop=scrollTop();
 window.onscroll=()=>{
-  let currentScrollTop=window.pageYOffset;
+  console.log(initialScrollTop)
+  let currentScrollTop=scrollTop();
   if(currentScrollTop < initialScrollTop){
     navbar.style.top="0px";
   }
