@@ -1,6 +1,7 @@
 "use strict";
-(function (d){
-const navbar = d.querySelector("#nav");
+// (function (d){
+  const d=document;
+const navbar = d.querySelector("#large-nav");
 const navBtn = d.querySelector("#nav-btn");
 const closeBtn = d.querySelector("#close-btn");
 const sidebar = d.querySelector("#sidebar");
@@ -225,6 +226,17 @@ const timeLineCenter=d.querySelector(".timeline-center");
 timeline.forEach(x=>{
     timeLineCenter.append(parse(timeLineTemp(x.number,x.date,x.event)));
     
-})
+});
+let initialScrollTop=window.pageYOffset;
+window.onscroll=()=>{
+  let currentScrollTop=window.pageYOffset;
+  if(currentScrollTop < initialScrollTop){
+    navbar.style.top="0px";
+  }
+  else if(currentScrollTop>100){
+    navbar.style.top="-45px";
+  }
+  initialScrollTop=currentScrollTop;
+}
 
-})(document);
+// })(document);
