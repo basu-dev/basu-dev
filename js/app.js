@@ -1,11 +1,11 @@
 "use strict";
-// (function (d){
-  const d=document;
+(function (d){
 const navbar = d.querySelector("#large-nav");
 const navheader =d.querySelector(".nav-header");
 const main=d.querySelector("main");
 const navBtn = d.querySelector("#nav-btn");
 const closeBtn = d.querySelector("#close-btn");
+const form=d.querySelector("form");
 // const sidebar = d.querySelector("#sidebar");
 const date = d.querySelector("#date");  
 
@@ -228,15 +228,35 @@ const scrollTop=_=>d.querySelector("main").scrollTop;
 let initialScrollTop=scrollTop();
 main.onscroll=()=>{
   let currentScrollTop=scrollTop();
-  if(currentScrollTop < initialScrollTop){
-    navbar.style.top="0px";
-    navheader.style.top="0px";
+  if(currentScrollTop<350){
+    navheader.children[0].style.opacity=0
+    navheader.classList.remove("nav-header-white");
+    
+    navbar.style.boxShadow="none";
   }
-  else if(currentScrollTop>100){
-    navbar.style.top="-47px";
-    navheader.style.top="-47px";
+  else{
+    if(currentScrollTop < initialScrollTop){
+      navbar.style.top="0px";
+      navheader.style.top="0px";
+      navbar.style.boxShadow="1px 0px 5px grey";
+      navheader.classList.add("nav-header-white");
+      navheader.children[0].style.opacity=1
+    }
+    else{
+
+      navbar.style.top="-47px";
+      navheader.style.top="-47px";
+    }
   }
+
   initialScrollTop=currentScrollTop;
+
+}
+form.onsubmit=(e)=>{
+  e.preventDefault();
+  let body=e.target[2].value;
+  let subject=e.target[1].value;
+  window.open(`mailto:adkrishna05@gmail.com?subject=${subject}&body=${body}`);
 }
 
-// })(document);
+})(document);

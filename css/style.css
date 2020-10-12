@@ -249,7 +249,7 @@ header{
     margin:0;
     height:50px;
     transition: .2s;
-    
+    /* box-shadow: 1px 0px 10px grey; */
 }
 .nav-header {
     display: flex;
@@ -266,6 +266,9 @@ header{
     cursor: pointer;
     z-index: 10 !important;
 }
+.nav-btn:focus{
+    outline: none;
+}
 @media screen and (max-width:768px){
     header{
         padding-top:50px;
@@ -277,14 +280,19 @@ header{
         position: fixed;
         width:100%;
         height: 50px;
-        background:white;
         z-index: 10;
-        box-shadow: 2px 0 3px grey;
         transition: .2s;
-
+    }
+    .nav-header-white{
+        box-shadow: 2px 0 3px grey;
+        background:white;
     }
     .nav-header h3{
-        margin-bottom:0;
+        opacity: 0;
+        margin:0;
+    }
+    .nav-header a{
+        color:var(--clr-secondary);
     }
 }
 @media screen and (min-width: 768px) {
@@ -401,12 +409,13 @@ Sidebar
 .sidebar-links a:hover {
     color: var(--clr-white);
 }
-
+.social-iconss{
+    text-align: center;
+}
 .social-icons {
     display: flex;
     margin-top: 3rem;
     width: 20rem;
-    grid-template-columns: repeat(6, 1fr);
     justify-content: space-evenly;
 }
 
@@ -465,7 +474,8 @@ Sidebar
 }
 
 .hero-icons {
-    justify-items: center;
+    justify-content: space-evenly;
+    
 
 }
 
@@ -593,7 +603,7 @@ Sidebar
     grid-gap: 4rem;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 650px) {
     .card-list {
         grid-template-columns: repeat(2, 1fr);
     }
