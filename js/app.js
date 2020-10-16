@@ -262,9 +262,8 @@ if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker
     .register('sw.js')
-    .then(reg=>console.log("Tick Tac Toe ready for install and play online."))
+    .then(reg=>console.log("Basu Dev Adhikari"))
     .catch(err=>`Service Error ${err}`)
   })
-  
 }
 })(document);
