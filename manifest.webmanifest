@@ -1,0 +1,23 @@
+{
+    "name":"Basu Dev Adhikari",
+    "short_name":"Basu Dev Adhikari",
+    "start_url":"./",
+    "display":"standalone",
+    "background_color":"white",
+    "description":"Personal Portfolio of Basu Dev Adhikari",
+    "orientation":"portrait",
+    "theme_color":"transparent",
+    "icons":[
+        {
+            "src":"images/512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        },
+        {
+            "src":"images/144.png",
+            "sizes":"144x144",
+            "type":"image/png"
+
+        }
+    ]
+}

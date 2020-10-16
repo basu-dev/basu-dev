@@ -256,7 +256,15 @@ form.onsubmit=(e)=>{
   e.preventDefault();
   let body=e.target[2].value;
   let subject=e.target[1].value;
-  window.open(`mailto:adkrishna05@gmail.com?subject=${subject}&body=${body}`);
+  window.open(`mailto:adbasudev54@gmail.com?subject=${subject}&body=${body}`);
 }
-
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker
+    .register('sw.js')
+    .then(reg=>console.log("Tick Tac Toe ready for install and play online."))
+    .catch(err=>`Service Error ${err}`)
+  })
+  
+}
 })(document);
