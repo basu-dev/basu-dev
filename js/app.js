@@ -55,14 +55,23 @@ const projects = [
     image: "bnb.jpg",
     live: "https://www.bandbmultimedia.com/",
   },
-  {
-    title: "Tic Tac Toe PWA",
-    techUsed: "HTML, CSS3, JavaScript",
+  // {
+  //   title: "Tic Tac Toe PWA",
+  //   techUsed: "HTML, CSS3, JavaScript",
+  //   description:
+  //     "Tic Tac Toe game developed as my Advanced JavaScript Challenge. You can play single player as well as multi player game.",
+  //   image: "tic.jpg",
+  //   live: "https://tictactoemini.netlify.app",
+  //   repo:"https://github.com/basu-dev/TicTacToe-PWA-"
+  // },
+    {
+    title: "Mawsam | WeatherApp",
+    techUsed: "Angular",
     description:
-      "Tic Tac Toe game developed as my Advanced JavaScript Challenge. You can play single player as well as multi player game.",
-    image: "tic.jpg",
-    live: "https://tictactoemini.netlify.app",
-    repo:"https://github.com/basu-dev/TicTacToe-PWA-"
+      "Mawsam is full feature Progressive Weather App (PWA) developed in Angular with openweather api and google location service api",
+    image: "weather.jpg",
+    live: "https://mawsam.netlify.app",
+    repo:"https://github.com/basu-dev/WeatherPWA"
   },
   {
     title: "Far - CLI Text Viewer",
