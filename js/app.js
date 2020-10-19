@@ -24,7 +24,7 @@ const projects = [
     techUsed: "Python Django , jQuery",
     description:
       "Social Networking Site like Facebook or Twitter built with Python Django and jQuery. Signup and start using it",
-    image: "raven.JPG",
+    image: "raven.jpg",
     live: "http://sbraven.herokuapp.com/",
     repo:
       "https://github.com/basu-dev/django-social-network-like-Facebook-or-Instagram",
@@ -270,7 +270,7 @@ form.onsubmit=(e)=>{
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker
-    .register('sw.js')
+    .register('../sw.js')
     .then(reg=>console.log("Basu Dev Adhikari"))
     .catch(err=>`Service Error ${err}`)
   })
