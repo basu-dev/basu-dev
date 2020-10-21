@@ -2,8 +2,8 @@ const cacheName='assets';
 const cacheAssets=[
     './',
     'index.html',
-    'css/style.css',
-    'js/app.js',
+    'css/style.min.css',
+    'js/app.min.js',
     'images/144.png',
     'images/512.png',
     'images/bnb.jpg',
