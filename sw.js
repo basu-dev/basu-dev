@@ -31,7 +31,6 @@ const cacheAssets=[
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'
 
 ]
-console.log("SV")
 self.addEventListener("install", async (e) => {
   const cache = await caches.open(cacheName);
   await cache.addAll(cacheAssets);
