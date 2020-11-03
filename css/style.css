@@ -364,8 +364,8 @@ Sidebar
     display: grid;
     justify-content: start;
     /* place-content: center; */
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+    -webkit-transition: right .3s ease-out;
+    transition: right .3s ease-out;
 }
 
 /* toggle sidebar */
