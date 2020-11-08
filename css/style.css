@@ -16,7 +16,7 @@
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
     --radius: 0.5rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --light-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
 }
@@ -600,18 +600,20 @@ Sidebar
     display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 4rem;
 }
 
 @media screen and (min-width: 650px) {
     .card-list {
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        
     }
 }
 
 @media screen and (min-width: 992px) {
     .card-list {
         grid-template-columns: repeat(3, 1fr);
+        grid-gap:4rem;
     }
 }
 
@@ -619,6 +621,7 @@ Sidebar
 .project-card {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 300px;
+    grid-gap: 1rem;
     flex: 1 1 300px;
     margin: 11px auto;
     background: #fff;

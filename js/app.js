@@ -263,15 +263,15 @@ main.onscroll=()=>{
 }
 form.onsubmit=(e)=>{
   e.preventDefault();
-  let body=e.target[2].value;
-  let subject=e.target[1].value;
+  let body=e.target[1].value;
+  let subject=e.target[0].value;
   window.open(`mailto:adbasudev54@gmail.com?subject=${subject}&body=${body}`);
 }
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker
     .register('../sw.js')
-    .then(reg=>console.log("Basu Dev Adhikari"))
+    .then(reg=>console.log("Portfolio of Basu Dev Adhikari"))
     .catch(err=>`Service Error ${err}`)
   })
 }
