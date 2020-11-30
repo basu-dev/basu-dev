@@ -39,6 +39,25 @@ const projects = [
     repo: "https://github.com/basu-dev/devJS-My-own-JS-Framework",
   },
   {
+    title: "Mawsam | WeatherApp",
+    techUsed: "Angular",
+    description:
+      "Mawsam is full feature Progressive Weather App (PWA) developed in Angular with openweather api and google location service api",
+    image: "weather.jpg",
+    live: "https://mawsam.netlify.app",
+    repo:"https://github.com/basu-dev/WeatherPWA"
+  },
+    {
+    title: "Far - CLI Text Viewer",
+    techUsed: "Rust",
+    description:
+      "A file opener for Windows command prompt and PowerShell like 'cat' for linux distributions. You can install it and type far <filename> and boom!",
+    image: "far.jpg",
+    live:"https://farcli.netlify.app",
+    repo:
+      "https://github.com/basu-dev/far-A-command-prompt-text-viewer-like-cat-for-linux",
+  },
+  {
     title: "Candy Crush Mini",
     techUsed: "JavaScript , HTML, CSS3",
     description:
@@ -64,25 +83,8 @@ const projects = [
   //   live: "https://tictactoemini.netlify.app",
   //   repo:"https://github.com/basu-dev/TicTacToe-PWA-"
   // },
-    {
-    title: "Mawsam | WeatherApp",
-    techUsed: "Angular",
-    description:
-      "Mawsam is full feature Progressive Weather App (PWA) developed in Angular with openweather api and google location service api",
-    image: "weather.jpg",
-    live: "https://mawsam.netlify.app",
-    repo:"https://github.com/basu-dev/WeatherPWA"
-  },
-  {
-    title: "Far - CLI Text Viewer",
-    techUsed: "Rust",
-    description:
-      "A file opener for Windows command prompt and PowerShell like 'cat' for linux distributions. You can install it and type far <filename> and boom!",
-    image: "far.jpg",
-    live:"https://farcli.netlify.app",
-    repo:
-      "https://github.com/basu-dev/far-A-command-prompt-text-viewer-like-cat-for-linux",
-  },
+
+
 ];
 const projectArea = d.querySelector(".projects-center .card-list");
 const projectTemplate = (
