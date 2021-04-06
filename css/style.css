@@ -14,7 +14,7 @@
     --ff-primary: "Poppins";
     --ff-secondary: "Poppins";
     --transition: all 0.3s linear;
-    --spacing: 0.25rem;
+    --spacing:1px;
     --radius: 0.5rem;
     --light-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
