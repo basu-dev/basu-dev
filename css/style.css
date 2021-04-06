@@ -225,17 +225,16 @@ header{
     position: absolute;
     bottom:-10px;
     height:2px;
-    width:0%;
-    left:-7.5%;
+    width:100%;
     background-color: var(--clr-secondary);
     content: "";
     border-radius:3px;
-    transform-origin: left;
+    transform:scaleX(0);
+    transform-origin: center;
     transition: .2s;
 }
 #large-nav ul li a:hover::before{
-    width:110%;
-    transform-origin: left;
+    transform: scaleX(1.1);
     color:inherit;
 }
 #large-nav{

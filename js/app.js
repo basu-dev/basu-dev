@@ -280,12 +280,12 @@ form.onsubmit=(e)=>{
   let subject=e.target[0].value;
   window.open(`mailto:adbasudev54@gmail.com?subject=${subject}&body=${body}`);
 }
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>{
-    navigator.serviceWorker
-    .register('../sw.js')
-    .then(reg=>console.log("%cPortfolio of Basu Dev Adhikari","color:cyan;font-size:20px"))
-    .catch(err=>`Service Error ${err}`)
-  })
-}
+// if('serviceWorker' in navigator){
+//   window.addEventListener('load',()=>{
+//     navigator.serviceWorker
+//     .register('../sw.js')
+//     .then(reg=>console.log("%cPortfolio of Basu Dev Adhikari","color:cyan;font-size:20px"))
+//     .catch(err=>`Service Error ${err}`)
+//   })
+// }
 })(document);
