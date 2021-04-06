@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* fonts */
 
@@ -9,10 +9,10 @@
     /* dark shades of primary color*/
     --clr-primary: #332C38;
     /*rgb(51, 44, 56)*/
-    --clr-secondary: #F64C72;
+    --clr-secondary: #00eeff;
     --clr-white: #fff;
-    --ff-primary: "Manrope","Verdana";
-    --ff-secondary: "Manrope","Verdana";
+    --ff-primary: "Poppins";
+    --ff-secondary: "Poppins";
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
     --radius: 0.5rem;
@@ -227,7 +227,7 @@ header{
     height:2px;
     width:0%;
     left:-7.5%;
-    background-color: red;
+    background-color: var(--clr-secondary);
     content: "";
     border-radius:3px;
     transform-origin: left;
@@ -699,7 +699,7 @@ Sidebar
 }
 
 .project-card .desc {
-    padding: 1rem 2rem;
+    padding: 0rem 1rem 2rem 1rem;
     font-size: 0.9em;
     color: var(--clr-primary);
 }
@@ -1266,7 +1266,7 @@ Footer
       width:100px;
       padding:15px;
       border-radius: 50px;
-      background:rgb(33, 201, 33);
+      background:var(--clr-secondary);
       border:none;
       font-size: 1.3rem;
       font-weight: 500;
@@ -1275,7 +1275,7 @@ Footer
   }
   form button:focus{
       outline: none;
-      background:rgb(7, 159, 7);
+      background:rgb(33, 148, 133);
   }
   .form-group{
       margin-top:-20px;

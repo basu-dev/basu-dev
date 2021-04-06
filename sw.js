@@ -2,8 +2,8 @@ const cacheName='assets';
 const cacheAssets=[
     './',
     'index.html',
-    'css/style.min.css',
-    'js/app.min.js',
+    'css/style-min.css',
+    'js/app-min.js',
     'images/144.png',
     'images/512.png',
     'images/bnb.jpg',
@@ -11,7 +11,8 @@ const cacheAssets=[
     'images/devjs.jpg',
     'images/far.jpg',
     'images/mypic.jpg',
-    'images/raven.jpg',
+    'images/raven.png',
+    'images/wrchostel.png',
     'images/mypic2.jpg',
     'images/tic.jpg',
     'images/weather.jpg',
@@ -27,13 +28,15 @@ const cacheAssets=[
     'favicon.ico',
     'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rust/rust.png',
     'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png',
-    'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png',
+    'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dart/dart.png',
     'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png',
+    'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png',
+
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-regular-400.woff2',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-brands-400.woff2',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-solid-900.woff2',
-    'https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap'
+    "https://fonts.googleapis.com/css2?family=Poppins&display=swap"
     
 
 ]

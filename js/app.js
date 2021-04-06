@@ -20,11 +20,20 @@ closeBtn.addEventListener("click", function () {
 date.innerHTML = new Date().getFullYear();
 const projects = [
   {
+    title: "Smart Hostel Management System",
+    techUsed: "Nodejs And Angular",
+    description:
+      "Smart Hostel Management System for Paschimanchal Campus, Boys Hostel.",
+    image: "wrchostel.png",
+    live: "https://wrchostel.netlify.app",
+    repo:"https://github.com/basu-dev/Hostel-Management-System"
+  },
+  {
     title: "Raven - Social Network",
     techUsed: "Python Django , jQuery",
     description:
       "Social Networking Site like Facebook or Twitter built with Python Django and jQuery. Signup and start using it",
-    image: "raven.jpg",
+    image: "raven.png",
     live: "http://sbraven.herokuapp.com/",
     repo:
       "https://github.com/basu-dev/django-social-network-like-Facebook-or-Instagram",
@@ -66,14 +75,16 @@ const projects = [
     live: "https://candycrushmini.netlify.app/",
     repo: "https://github.com/basu-dev/CandyCrush-A-Vanilla-JS-Challange",
   },
-  {
-    title: "B&B Multimedia",
-    techUsed: "Python Django , jQuery",
-    description:
-      "This is the website I built for the company B&B Multimedia which is Events Hosting Organization.",
-    image: "bnb.jpg",
-    live: "https://www.bandbmultimedia.com/",
-  },
+
+  // {
+  //   title: "B&B Multimedia",
+  //   techUsed: "Python Django , jQuery",
+  //   description:
+  //     "This is the website I built for the company B&B Multimedia which is Events Hosting Organization.",
+  //   image: "bnb.jpg",
+  //   live: "https://www.bandbmultimedia.com/",
+  // },
+
   // {
   //   title: "Tic Tac Toe PWA",
   //   techUsed: "HTML, CSS3, JavaScript",
@@ -273,7 +284,7 @@ if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker
     .register('../sw.js')
-    .then(reg=>console.log("Portfolio of Basu Dev Adhikari"))
+    .then(reg=>console.log("%cPortfolio of Basu Dev Adhikari","color:cyan;font-size:20px"))
     .catch(err=>`Service Error ${err}`)
   })
 }
