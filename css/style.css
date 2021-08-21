@@ -275,7 +275,10 @@ header {
     grid-template-columns: 1fr 1fr;
   }
   .project-img {
-    height: auto !important;
+    /* height: auto !important; */
+    min-height: 200px;
+
+    max-height: 250px;
   }
   header {
     padding-top: 50px;
@@ -1166,4 +1169,13 @@ form button:focus {
 }
 .box-bg-primary * {
   color: white !important;
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .hero {
+    min-height: 50vh;
+  }
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
 }
