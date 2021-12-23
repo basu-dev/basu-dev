@@ -129,7 +129,7 @@
             <a href="${live}" target="_blank" rel="noopener noreferrer">
               <button>
                 <span>
-                  <i class="far fa-window-restore"></i>
+                  <i class="fas fa-window-restore"></i>
                   <span>
                     Live Site
                   </span>
@@ -140,7 +140,7 @@
               rel="noopener noreferrer">
               <button>
                 <span>
-                  <i class="fab fa-github"></i>
+                  <i class="fas fa-code-branch"></i>
                   <span>
                     Repo Link
                   </span>
@@ -286,12 +286,17 @@
     let subject = e.target[0].value;
     window.open(`mailto:adbasudev54@gmail.com?subject=${subject}&body=${body}`);
   };
-  // if('serviceWorker' in navigator){
-  //   window.addEventListener('load',()=>{
-  //     navigator.serviceWorker
-  //     .register('../sw.js')
-  //     .then(reg=>console.log("%cPortfolio of Basu Dev Adhikari","color:cyan;font-size:20px"))
-  //     .catch(err=>`Service Error ${err}`)
-  //   })
-  // }
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("../sw.js")
+        .then((reg) =>
+          console.log(
+            "%cPortfolio of Basu Dev Adhikari",
+            "color:cyan;font-size:20px"
+          )
+        )
+        .catch((err) => `Service Error ${err}`);
+    });
+  }
 })(document);
